@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Mp3 Downloader</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='pics/icon.png') }}">
+</head> 
+<body>
+      <form id="download-form" action="{{ url_for("process") }}" method="post">
+        <h1>YouTube MP3 Downloader</h1>
+        <div class="input-container">
+            <input type="text" placeholder="YouTube URL" id="url" name="url">
+            <input type="text" placeholder="Song Title" id="title" name="title">
+            <input type="text" placeholder="Artist" id="artist" name="artist">
+        </div>
+        <button type="submit">Download</button>
+        <h2>by tombk556</h2>
+      </form> 
+</body>
+<script src="{{ url_for('static', filename='index.js') }}"></script> 
+</html>
