@@ -15,4 +15,4 @@ COPY templates/ /app/templates/
 COPY static/ /app/static/
 COPY app.py /app/
 
-EXPOSE 4000
+EXPOSE 8080
